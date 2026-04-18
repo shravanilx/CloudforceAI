@@ -1,309 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CloudForce AI</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-/* BASE */
-html { scroll-behavior: smooth; }
-
-body {
-	margin: 0;
-	font-family: 'Segoe UI', sans-serif;
-	background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-	color: #0f172a;
-}
-
-/* NAVBAR */
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 18px 90px;
-	background: white;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.logo {
-	height: 68px;   /* ✅ bigger but not bulky */
-}
-
-.nav-links {
-	display: flex;
-	align-items: center;
-	gap: 28px;
-}
-
-.nav-links a {
-	text-decoration: none;
-	color: #0f172a;
-	font-weight: 500;
-}
-
-.btn-nav {
-	background: #f59e0b;
-	padding: 10px 18px;
-	border-radius: 8px;
-	color: white;
-	font-weight: 600;
-}
-
-/* HERO */
-.hero {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 90px 90px 60px;
-	gap: 40px;
-	flex-wrap: wrap;
-}
-
-.hero-left {
-	max-width: 520px;
-}
-
-.hero-left h1 {
-	font-size: 2.5rem;   /* ✅ reduced (was too aggressive) */
-	line-height: 1.2;
-	margin: 0;
-}
-
-.highlight {
-	color: #2563eb;
-}
-
-.hero-left p {
-	margin-top: 18px;
-	font-size: 1rem;
-	color: #475569;
-	line-height: 1.6;
-}
-
-.sub-points {
-	margin-top: 14px;
-	font-size: 0.9rem;
-	color: #334155;
-}
-
-/* BUTTONS */
-.buttons {
-	margin-top: 25px;
-}
-
-.btn-primary {
-	background: #2563eb;
-	color: white;
-	padding: 13px 22px;
-	border-radius: 8px;
-	text-decoration: none;
-	font-weight: 600;
-	margin-right: 10px;
-}
-
-.btn-secondary {
-	border: 1px solid #2563eb;
-	color: #2563eb;
-	padding: 13px 22px;
-	border-radius: 8px;
-	text-decoration: none;
-}
-
-/* HERO IMAGE */
-.hero-right {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-}
-
-.hero-image {
-	width: 100%;
-	max-width: 400px;   /* ✅ reduced slightly */
-	border-radius: 16px;
-	box-shadow: 0 20px 50px rgba(37,99,235,0.2);
-}
-
-/* TRUST */
-.trust {
-	text-align: center;
-	padding: 25px 20px 5px;
-	font-size: 13px;
-	color: #64748b;
-}
-
-.trust-logos {
-	display: flex;
-	justify-content: center;
-	gap: 35px;
-	padding-bottom: 25px;
-	font-weight: 600;
-	color: #334155;
-}
-
-/* RESULTS */
-.results {
-	background: white;
-	padding: 60px 20px;
-	text-align: center;
-}
-
-.metrics {
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	flex-wrap: wrap;
-}
-
-.metric {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #2563eb;
-}
-
-.metric span {
-	display: block;
-	font-size: 0.85rem;
-	color: #475569;
-}
-
-/* SERVICES */
-.services {
-	text-align: center;
-	padding: 60px 20px;
-}
-
-.service-grid {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.card {
-	background: white;
-	padding: 24px;
-	border-radius: 12px;
-	width: 250px;
-	box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* CONTACT */
-.contact {
-	padding: 60px 20px;
-	text-align: center;
-}
-
-.contact form {
-	max-width: 420px;
-	margin: auto;
-}
-
-.contact input,
-.contact textarea {
-	width: 100%;
-	padding: 12px;
-	margin: 10px 0;
-	border: 1px solid #ddd;
-	border-radius: 6px;
-}
-
-</style>
+<title>CloudForce AI | Modern Salesforce, AI, and Cloud Solutions</title>
+<meta name="description" content="CloudForce AI is a modern software solutions company delivering Salesforce consulting, AI automation, cloud integration, and digital transformation services.">
+<link rel="stylesheet" href="site.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand-lockup" href="index.html">
+        <img src="./images/logo.png" alt="CloudForce AI logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰</button>
 
-<!-- NAVBAR -->
-<div class="navbar">
-	<img src="./images/logo.png" class="logo">
+      <nav class="nav-menu" id="primary-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
 
-	<div class="nav-links">
-		<a href="#home">Home</a>
-		<a href="#services">Services</a>
-		<a href="#contact">Contact</a>
-		<a href="#contact" class="btn-nav">Let's Talk</a>
-	</div>
-</div>
+      <a href="faq.html#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
+  <section class="hero-shell">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Professional digital transformation partner</div>
+        <h1>Designing <span>high-impact systems</span> for ambitious companies.</h1>
+        <p>
+          CloudForce AI helps businesses modernize operations with elegant Salesforce delivery, AI-powered automation,
+          connected data flows, and cloud-first architecture that actually supports growth.
+        </p>
 
-	<div class="hero-left">
-		<h1>
-			Automate Your Business with <span class="highlight">AI & Cloud</span><br>
-			Reduce Costs. Scale Faster.
-		</h1>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary">Explore Services</a>
+          <a href="about.html" class="btn btn-secondary">Why CloudForce AI</a>
+        </div>
 
-		<p>
-			We help US mid-sized companies streamline operations using Salesforce, AI, and modern cloud systems.
-		</p>
+        <div class="hero-trust">
+          <span>Salesforce consulting</span>
+          <span>AI workflows and automation</span>
+          <span>Enterprise integration</span>
+          <span>Cloud modernization</span>
+        </div>
+      </div>
 
-		<div class="sub-points">
-			✔ Reduce manual work &nbsp;&nbsp; ✔ Improve efficiency &nbsp;&nbsp; ✔ Scale faster
-		</div>
+      <div class="hero-visual reveal">
+        <div class="visual-frame visual-main">
+          <div class="visual-grid">
+            <div class="visual-panel-left">
+              <div class="mini-topbar">
+                <div class="mini-dots"><span></span><span></span><span></span></div>
+                <div>CloudForce AI delivery model</div>
+              </div>
 
-		<div class="buttons">
-			<a href="#contact" class="btn-primary">Book Free Consultation</a>
-			<a href="#services" class="btn-secondary">View Services</a>
-		</div>
-	</div>
+              <div class="signal-card">
+                <h3>Operational visibility, automation, and scale</h3>
+                <p>Built for teams that need clearer workflows, stronger reporting, and systems that work together.</p>
+              </div>
 
-	<div class="hero-right">
-		<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" class="hero-image">
-	</div>
+              <div class="bars">
+                <div class="bar-row">
+                  <span>Platform performance</span>
+                  <div class="bar-track"><i class="w-88"></i></div>
+                </div>
+                <div class="bar-row">
+                  <span>Workflow automation</span>
+                  <div class="bar-track"><i class="w-78"></i></div>
+                </div>
+                <div class="bar-row">
+                  <span>Cross-system integration</span>
+                  <div class="bar-track"><i class="w-66"></i></div>
+                </div>
+              </div>
+            </div>
 
-</section>
+            <div class="visual-panel-right">
+              <div class="metric-stack">
+                <div class="metric-card">
+                  <strong>10+</strong>
+                  <span>Years of platform, cloud, and automation expertise.</span>
+                </div>
+                <div class="metric-card">
+                  <strong>360</strong>
+                  <span>Strategy, implementation, optimization, integration, and support.</span>
+                </div>
+                <div class="metric-card">
+                  <strong>Fast</strong>
+                  <span>Focused on practical execution and business-ready outcomes.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- TRUST -->
-<div class="trust">
-	Experience across leading cloud & CRM ecosystems
-</div>
+      </div>
+    </div>
 
-<div class="trust-logos">
-	<span>Salesforce</span>
-	<span>AWS</span>
-	<span>Azure</span>
-	<span>Google Cloud</span>
-</div>
+    <div class="trust-strip reveal">
+      <p>Core solution areas</p>
+      <div class="trust-logos">
+        <span>Salesforce</span>
+        <span>Agentforce</span>
+        <span>AWS</span>
+        <span>Azure</span>
+        <span>Data Cloud</span>
+        <span>Automation Design</span>
+      </div>
+    </div>
+  </section>
 
-<!-- RESULTS -->
-<section class="results">
-	<h2>Proven Impact</h2>
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-intro reveal">
+          <div class="section-label">About CloudForce AI</div>
+          <h2>Helping businesses modernize operations with Salesforce, AI, and connected cloud systems.</h2>
+          <p>
+            CloudForce AI partners with growing companies that need smarter workflows, stronger automation, and better
+            system alignment. We combine platform expertise, business thinking, and delivery execution to create
+            scalable solutions that improve visibility, productivity, and customer experience.
+          </p>
+        </div>
 
-	<div class="metrics">
-		<div class="metric">40% <span>Cost Reduction</span></div>
-		<div class="metric">60% <span>Automation</span></div>
-		<div class="metric">2x <span>Faster Ops</span></div>
-	</div>
-</section>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="icon-badge">01</div>
+            <h3>Salesforce transformation</h3>
+            <p>Build and optimize Salesforce environments that support sales, service, reporting, and operational efficiency.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge">02</div>
+            <h3>AI-driven automation</h3>
+            <p>Reduce manual work and accelerate execution with intelligent workflows designed around real business processes.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge">03</div>
+            <h3>Cloud and integration delivery</h3>
+            <p>Connect business systems, improve data flow, and create a stronger digital foundation for long-term growth.</p>
+          </article>
+        </div>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-	<h2>Our Services</h2>
+        <div class="stats-band grid-4">
+          <div class="stat-pill reveal">
+            <strong>10+</strong>
+            <span>Years of experience across CRM, cloud, and delivery transformation.</span>
+          </div>
+          <div class="stat-pill reveal">
+            <strong>360</strong>
+            <span>Consulting, implementation, optimization, integration, and support.</span>
+          </div>
+          <div class="stat-pill reveal">
+            <strong>Faster</strong>
+            <span>Delivery designed to simplify workflows and help teams move with confidence.</span>
+          </div>
+          <div class="stat-pill reveal">
+            <strong>Better</strong>
+            <span>Operational visibility, automation maturity, and connected systems across the business.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<div class="service-grid">
-		<div class="card">AI & Automation</div>
-		<div class="card">Salesforce Solutions</div>
-		<div class="card">Cloud Applications</div>
-		<div class="card">Data & Analytics</div>
-	</div>
-</section>
+    <section>
+      <div class="container split-layout">
+        <div class="feature-panel reveal">
+          <h3>CloudForce AI helps businesses turn scattered tools into a connected operating model.</h3>
+          <p>
+            We shape platform strategy, build efficient workflows, connect systems, and modernize the way teams work.
+            The result is a more mature digital foundation with less manual effort and stronger visibility.
+          </p>
+          <div class="bullet-list">
+            <span>Salesforce implementations and optimization</span>
+            <span>AI workflows and intelligent automation</span>
+            <span>Cloud integration and business system alignment</span>
+            <span>Process modernization with measurable outcomes</span>
+          </div>
+        </div>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-	<h2>Book Free Consultation</h2>
+        <div class="split-copy reveal">
+          <div class="section-label">Why companies choose us</div>
+          <h2>Technology delivery aligned to business goals, not just technical tasks.</h2>
+          <p>
+            We focus on practical outcomes, clean implementation, and systems that support real operational improvement.
+            Every engagement is shaped to reduce friction, improve clarity, and give teams a stronger foundation for scale.
+          </p>
+          <div class="value-list">
+            <div class="value-row">
+              <div class="icon-badge">A</div>
+              <div>
+                <strong>Outcome-focused delivery</strong>
+                <span>Projects are designed around efficiency, visibility, and measurable business value.</span>
+              </div>
+            </div>
+            <div class="value-row">
+              <div class="icon-badge">B</div>
+              <div>
+                <strong>Flexible solution design</strong>
+                <span>Services can be adapted for consulting, implementation, modernization, or long-term support.</span>
+              </div>
+            </div>
+            <div class="value-row">
+              <div class="icon-badge">C</div>
+              <div>
+                <strong>Scalable technology foundation</strong>
+                <span>We help businesses build systems that continue to support growth as needs evolve.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<form action="https://formspree.io/f/xjgjvgjy" method="POST">
-		<input type="text" name="name" placeholder="Your Name" required>
-		<input type="email" name="email" placeholder="Your Email" required>
-		<textarea name="message" placeholder="What do you need?" required></textarea>
+    <section>
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Ready to streamline operations and accelerate digital transformation?</h2>
+            <p>
+              Let’s discuss your Salesforce roadmap, automation opportunities, integration goals, and the systems your
+              team needs to scale with confidence.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="services.html" class="btn btn-primary">See Services</a>
+            <a href="faq.html#contact" class="btn btn-secondary">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-		<button type="submit" class="btn-primary" style="width:100%">
-			Submit
-		</button>
-	</form>
-</section>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-copy">
+          <div class="footer-brand">CloudForce AI</div>
+          <p>Salesforce, AI automation, and cloud delivery for companies building smarter operations.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Navigation</strong>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="process.html">Process</a>
+        </div>
+        <div class="footer-links">
+          <strong>Connect</strong>
+          <a href="faq.html">FAQ</a>
+          <a href="faq.html#contact">Contact</a>
+          <a href="https://www.linkedin.com/company/cloudforceai-solutions-private-limited/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://wa.me/917993434634" target="_blank" rel="noopener noreferrer">WhatsApp: +91 7993434634</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>Copyright 2026 CloudForce AI. All rights reserved.</div>
+        <div>Professional website concept for software and consulting delivery.</div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="site.js"></script>
 </body>
 </html>
